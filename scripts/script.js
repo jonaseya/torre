@@ -8,3 +8,13 @@ document.getElementById("revealer").addEventListener('click', function() {
         x.style.display = "none";
     }
 });
+fetch('https://search.torre.co/opportunities/_search/?', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: 'search' })
+    })
+    .then(res => {
+        return res.json()
+    })
+    .then(data => console.log(data))
+    .catch(error => console.log('ERROR'))

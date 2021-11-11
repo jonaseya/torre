@@ -27,7 +27,7 @@ body {
 }
 
 input.search-text {
-    color: #fff;
+    color: rgb(246, 250, 0);
     right: 1%;
     position: relative;
     z-index: 5;
@@ -51,7 +51,7 @@ input.search-text:focus {
     z-index: 3;
     width: 210px;
     border: 1px solid rgb(129, 128, 128);
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     outline: none;
     cursor: auto;
     padding-right: 10px;
