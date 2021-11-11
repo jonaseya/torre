@@ -1,16 +1,10 @@
-$(".e-list").slideUp(function() {
-    $(".e-button").removeClass("open");
-});
-console.log("Hello")
-$(".e-button").on("click", function() {
-    if ($(this).hasClass("open")) {
-        $(".e-list").slideUp(function() {
-            $(".e-button").removeClass("open");
-        });
+var element = document.getElementById("software-dev").style.display = "none";
+
+document.getElementById("revealer").addEventListener('click', function() {
+    var x = document.getElementById("software-dev");
+    if (x.style.display === "none") {
+        x.style.display = "block";
     } else {
-        $(this).addClass("open");
-        setTimeout(function() {
-            $(".e-list").stop().slideDown();
-        }, 200);
+        x.style.display = "none";
     }
 });
