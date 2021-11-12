@@ -92,7 +92,7 @@ h4 {
 }
 
 p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 21px;
 }
 
@@ -137,6 +137,10 @@ p {
     padding: 10px;
 }
 
+.skills ul li:hover {
+    background: black;
+}
+
 .skills ul li a {
     color: rgb(206, 204, 204);
 }
@@ -144,19 +148,13 @@ p {
 
 /**/
 
-.revealer {
-    animation: slide-in-fwd-center 0.40s cubic-bezier(0.250, 0.460, 0.450000, 0.940) both;
-}
-
-@keyframes slide-in-fwd-center {
-    0% {
-        transform: translateZ(-1400px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateZ(0);
-        opacity: 1;
-    }
+.listdetail {
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    display: none;
+    opacity: 1;
+    transition: opacity 0.5s linear;
 }
 
 
