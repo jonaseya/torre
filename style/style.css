@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #504e4e;
+    background-color: #27292d;
     font-family: Montserrat, sans-serif;
     display: flex;
     align-items: center;
@@ -16,66 +16,101 @@ body {
 
 .navbar-dark .navbar-brand {
     color: #fff;
+    position: sticky;
+    right: 2vw;
 }
 
 .nav-link {
     color: rgb(246, 250, 0);
+    font-size: 14px;
 }
 
 .nav-link:hover {
     color: #fff;
 }
 
-input.search-text {
-    color: rgb(246, 250, 0);
-    right: 1%;
+
+/*  burger menu */
+
+
+/* Hamburger Icon */
+
+
+/*****Search****/
+
+.search-container {
     position: relative;
-    z-index: 5;
-    transition: z-index 0.8s, width 0.5s, background 0.3s ease, border 0.3s;
-    height: 45px;
-    width: 0;
-    margin: 0;
-    padding: 5px 0 5px 40px;
-    box-sizing: border-box;
-    font-size: 16px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 30px;
-    border: 1px solid transparent;
-    /*background: url(search.png) no-repeat left 9px center transparent;*/
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUxMiA1MTIiIGhlaWdodD0iNTEycHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik01MDMuODY2LDQ3Ny45NzRMMzYwLjk1OCwzMzUuMDUyYzI4LjcyNS0zNC41NDQsNDYuMDE3LTc4LjkxMiw0Ni4wMTctMTI3LjMzNiAgYzAtMTEwLjA4NC04OS4yMjctMTk5LjMxMi0xOTkuMzEyLTE5OS4zMTJDOTcuNTk5LDguNDAzLDguMzUxLDk3LjYzMSw4LjM1MSwyMDcuNzE1YzAsMTEwLjA2NCw4OS4yNDgsMTk5LjMxMiwxOTkuMzEyLDE5OS4zMTIgIGM0OC40MzUsMCw5Mi43OTItMTcuMjkyLDEyNy4zMzYtNDYuMDE3bDE0Mi45MDgsMTQyLjkyMkw1MDMuODY2LDQ3Ny45NzR6IE0yOS4zMzEsMjA3LjcxNWMwLTk4LjMzNCw3OS45ODctMTc4LjMzMiwxNzguMzMyLTE3OC4zMzIgIGM5OC4zMjUsMCwxNzguMzMyLDc5Ljk5OCwxNzguMzMyLDE3OC4zMzJzLTgwLjAwNywxNzguMzMyLTE3OC4zMzIsMTc4LjMzMkMxMDkuMzE4LDM4Ni4wNDcsMjkuMzMxLDMwNi4wNSwyOS4zMzEsMjA3LjcxNXoiIGZpbGw9IiMzNzQwNEQiLz48L3N2Zz4=) no-repeat left 9px center transparent;
-    background-size: 20px;
+    display: inline-block;
+    margin: 4px 2px;
+    height: 50px;
+    width: 50px;
+    vertical-align: bottom;
 }
 
-input.search-text:focus {
-    z-index: 3;
-    width: 210px;
-    border: 1px solid rgb(129, 128, 128);
-    background-color: rgb(0, 0, 0);
-    outline: none;
-    cursor: auto;
-    padding-right: 10px;
+.mglass {
+    display: inline-block;
+    pointer-events: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
 }
 
-input.search-submit {
+.searchbutton {
     position: absolute;
-    z-index: 4;
-    top: 17px;
-    left: 49px;
-    width: 45px;
-    height: 45px;
+    left: 7vw;
+    font-size: 26px;
+    width: 100%;
     margin: 0;
     padding: 0;
-    border: 0;
-    outline: 0;
-    border-radius: 30px;
-    cursor: pointer;
-    background: none;
 }
 
-input.search-text::-webkit-search-cancel-button {
-    cursor: pointer;
+.search:focus+.searchbutton {
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    color: white;
 }
+
+.search {
+    position: absolute;
+    left: 49px;
+    /* Button width-1px (Not 50px/100% because that will sometimes show a 1px line between the search box and button) */
+    box-shadow: -5px -10px 10px #27292d, 0px 4px 15px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    outline: none;
+    border: none;
+    padding: 0px;
+    width: 0vw;
+    height: 100%;
+    z-index: 10;
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+}
+
+.search:focus {
+    width: 30vw;
+    /* Bar width+1px */
+    padding: 0 16px 0 0;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.expandright {
+    left: auto;
+    right: 4px;
+    /* Button width-1px */
+}
+
+.expandright:focus {
+    padding: 0 0 0 16px;
+}
+
+
+/*********/
 
 
 /*********/
@@ -99,7 +134,7 @@ p {
 .card-container {
     background-color: #27292d;
     border-radius: 5px;
-    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: -5px -10px 10px #27292d, 0px 4px 15px rgba(0, 0, 0, 0.5);
     color: #B3B8CD;
     padding-top: 1%;
     position: relative;
