@@ -17,9 +17,11 @@
 
     <div class="card-container">
         <nav class="navbar navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+            <button class="navbar-toggler collapsed border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <div class="close-icon py-1">✖</div>
+              </button>
+
             <a class="navbar-brand mx-1" href="#">torre<span style="color: rgb(246, 250, 0)">.co</span></a>
 
             <form action="#" class=" search-form ">
@@ -35,21 +37,21 @@
         </div>
         <div class="skills ">
             <p>Skills and interests</p>
-            <h4>Master/ influncer</h4>
+
+            <h4> <i class="fas fa-biking">
+                </i>Master/ influncer</h4>
             <ul>
-                <li id="revealer ">Software developer</li>
-                <div id="software-dev ">
-                    <div id="json-content "></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <li onclick="myFunction('button1')">Software-developer</li>
+                <div id="button1" class="listdetail">
+                    <p>I can show anything here</p>
                 </div>
-
-                <li id="revealer ">Team management</li>
-                <div id="team-management ">
-                    <div id="json-content "></div>
-
+                <li onclick="myFunction('button2')">Team management</li>
+                <div id="button2" class="listdetail">
+                    <p>I can show anything here too and different from button 1</p>
                 </div>
             </ul>
-            <h4>proficient</h4>
+
+            <h4><i class="fas fa-running"></i>proficient</h4>
             <ul>
                 <li>Unit testing</li>
                 <li>Functional programming</li>
