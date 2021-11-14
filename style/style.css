@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #27292d;
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.navbar-dark .navbar-brand {
+    color: #fff;
+    position: sticky;
+    right: 2vw;
+}
+
+.nav-link {
+    color: rgb(246, 250, 0);
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+
+/*  burger menu */
+
+
+/* Hamburger Icon */
+
+
+/*****Search****/
+
+.search-container {
+    position: relative;
+    display: inline-block;
+    margin: 4px 2px;
+    height: 50px;
+    width: 20px;
+    vertical-align: bottom;
+}
+
+.mglass {
+    display: inline-block;
+    pointer-events: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+}
+
+.searchbutton {
+    position: absolute;
+    left: 37px;
+    font-size: 26px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.search:focus+.searchbutton {
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    color: white;
+}
+
+.search {
+    position: absolute;
+    left: 49px;
+    /* Button width-1px (Not 50px/100% because that will sometimes show a 1px line between the search box and button) */
+    box-shadow: -5px -10px 10px #27292d, 0px 4px 15px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    outline: none;
+    border: none;
+    padding: 0px;
+    width: 0vw;
+    height: 100%;
+    z-index: 10;
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+}
+
+.search:focus {
+    width: 165px;
+    /* Bar width+1px */
+    padding: 0 16px 0 0;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.expandright {
+    left: auto;
+    right: 4px;
+    Button width-1px;
+}
+
+.expandright:focus {
+    padding: 0 0 0 16px;
+}
+
+
+/*********/
+
+
+/*********/
+
+h3 {
+    margin: 10px 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+h4 {
+    margin: 5px 0;
+    font-size: 0.8rem;
+}
+
+p {
+    font-size: 12px;
+    line-height: 21px;
+}
+
+.card-container {
+    background-color: #27292d;
+    border-radius: 5px;
+    box-shadow: -5px -10px 10px #27292d, 0px 4px 15px rgba(0, 0, 0, 0.5);
+    color: #B3B8CD;
+    padding-top: 1%;
+    position: relative;
+    width: 350px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.card-container .round {
+    border: 1px solid #03BFCB;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.skills {
+    background-color: #27292d;
+    text-align: left;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills ul li {
+    border: 1px solid #02899C;
+    background-color: #36373a;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 8px 8px 0;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.skills ul li:hover {
+    background: black;
+}
+
+.skills ul li a {
+    color: rgb(206, 204, 204);
+}
+
+
+/**/
+
+.listdetail {
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    display: none;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+
+
+/**/
+
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.skills a {
+    color: yellow;
+    display: inline-block;
+    text-align: center;
+    margin-left: 50%;
+    margin-right: 50%;
+    overflow: visible;
+}
